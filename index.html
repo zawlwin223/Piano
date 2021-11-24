@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+<title>My mini piano</title>
+<meta name="title" content="My mini piano">
+<meta name="description" content="I created for you to play when you are fucking bored">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://brave-bell-e7e558.netlify.app">
+<meta property="og:title" content="My mini piano, I created for you to play when you are fucking bored">
+<meta property="og:description" content="I created for you to play when you are fucking bored">
+<meta property="og:image" content="piano.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://brave-bell-e7e558.netlify.app">
+<meta property="twitter:title" content="My mini piano, I created for you to play when you are fucking bored">
+<meta property="twitter:description" content="I created for you to play when you are fucking bored">
+<meta property="twitter:image" content="piano.png">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Festive&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div class="container">
+    <h1 class="head">
+        Zaw Lwin Phyo's Mini Piano
+    </h1>
+    <div class="piano-performance">
+        <input type="text" id="ipt" class="ipt"><br>
+    <div class="button-box">
+        <button id="save" onclick="SaveMemory()" class="save">Save</button>
+    <button id="delete" onclick="Delete()" class="delete">Delete</button>
+    <button id="removeone" onclick="removeone()" class="back">Back</button><br>
+    </div>
+    </div>
+    <div class="test-box">
+        <div class="test" id="gg-1"></div>
+        <div class="test" id="gg-2"></div>
+        <div class="test" id="gg-3"></div>
+        <div class="test" id="gg-4"></div>
+        <div class="test" id="gg-5"></div>
+        <div class="test" id="gg-6"></div>
+        <div class="test" id="gg-7"></div>
+        <div class="test" id="gg-8"></div>
+    </div>
+    <div class="piano-key-box">
+        
+    <button onclick="run('C4')" class="key-button key-1 "id="key"><span>C4</span></button>
+    <button onclick="run('D4')" class="key-button key-2" id="key"><span>D4</span></button>
+    <button onclick="run('E4')" class="key-button key-3" id="key"><span>E4</span></button>
+    <button onclick="run('F4')" class="key-button key-4" id="key"><span>F4</span></button>
+    <button onclick="run('G4')" class="key-button key-5" id="key"><span>G4</span></button>
+    <button onclick="run('A4')" class="key-button key-6" id="key"><span>A4</span></button>
+    <button onclick="run('B4')" class="key-button key-7" id="key"><span>B4</span></button>
+    <button onclick="run('C5')" class="key-button key-8" id="key"><span>C5</span></button>
+    
+    </div>
+    <ul id="list" class="ul"></ul>
+   </div>
+   <script src="app.js"></script>
+  
+  
+</body>
+</html>
